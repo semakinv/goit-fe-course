@@ -23,9 +23,6 @@ img {
     display: block;
     height: auto;
 }
-/*img:not([width]):not([height]) {
-  border: 2px solid red !important;
-}*/
 .clearfix::after {
 display: table;
 content: "";
@@ -34,6 +31,7 @@ clear: both;
 
 .wrapper {
     width: 1110px;
+    height: auto;
     margin: 0 auto;
     padding-top: 44px;
 
@@ -42,13 +40,20 @@ clear: both;
 
 .header{
 margin-bottom: 110px;
+
+
+}
+.nav-section{
+    line-height: 22px;
 }
 .logo{
-    float: left;
+    display: inline-block;
     text-transform: uppercase;
     font-size: 30px;
     font-family: 'Roboto light', sans-serif;
     color: #555252;
+    text-decoration: none;
+    
 }
 .logo::first-letter{
 color: #1abc9c;
@@ -60,20 +65,17 @@ float: right;
 }
 .menu-item{
     margin-right: 36px;
+    list-style-type: none;
+    float: left;
 }
 .menu-item:last-child{
     margin-right: 0px;
-}
-.menu-item{
-    list-style-type: none;
-    float: left;
 }
 
 .menu-link:hover{
     color: #1abc9c;
 }
 .menu-link{
-    display:block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -82,23 +84,27 @@ float: right;
 }
 
 /*main*/
-.h2 {
-    display:block;
+.section-title {
     text-align: center;
     font-family: 'Roboto black', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    margin: 92px;
+    margin-bottom: 80px;
     color: #515151;
 }
 
-.h2::after{
-    content: "________";
-    color: #1abc9c;
-    letter-spacing:-2px;
+.section-title::after{
+    display:block;
+    content:"";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 32px;
 }
 
-.product-link:hover > .product-des {
+.product-box:hover > .product-des {
  background-color: #1abc9c;
 }
 .product-box{
@@ -110,61 +116,61 @@ float: right;
     list-style-type: none;
     background-color: #e9f0fd;
     display:block;
-    text-align: center;
     font-family: 'Roboto black', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-    overflow: hidden;
+    
 }
 
 .product-box:nth-child(4n) {
-    margin-right: 0px}
+    margin-right: 0px
+}
 
+.product-box:nth-last-child(-n+4) {
+    margin-bottom: 0px
+}
 .product-des{
-    color: #ffffff;
+    width: 100%;
+    color: #fff;
     background-color: #323232;
     text-align: left;
-    padding-left: 10px;
-    width: 100%;
     height: 40px;
     line-height: 40px;
 }
+.product-name{
+    width: 201px;
+    float: left;
+    padding-left: 13px;
+}
 .product-price{
+    width: 54px;
+    color: #fff;
     float: right;
     background-color: rgba(255, 255, 255, .44);
     padding: 0 12px;
 }
-.product-img-container{
+.product-img{
     width: 255px;
     height: 282px;
     max-width: 100%;
-    overflow: hidden;
 }
-.product-img{
-    height: 140%;
-    margin-top: -55px;
-    margin-left: -7%;
+.product{
+    margin-bottom: 100px;
 }
-.rotate{
-   -moz-transform: rotate(70deg);  /* Firefox */
-  -o-transform: rotate(70deg);  /* Opera */
-  -webkit-transform: rotate(70deg);  /* Safari y Chrome */
-}
-.product-link{
-    text-decoration: none;
-}
-
 /* news*/
 .news-article{
     width:350px;
     text-align: left;
     color: #515151;
 }
-
+.news-container{
+    height: auto;
+    margin-bottom: 48px;
+}
 .news-li{
     float: left;
-    width:auto;
-    height: 322px;
+    width:350px;
+    height: auto;
     margin-right: 30px;
     margin-bottom: 16px;
     list-style-type: none;
@@ -178,51 +184,44 @@ float: right;
     margin-right: 0px;
 }
 .news-img{
-   height:120%;
-   display:block;
-}
-.img-container{
-    height:262px;
-    width:350px;
-    min-height:262px;
-    min-width:350px;
-    max-height:262px;
-    max-width:350px;
-    overflow: hidden;
-    display:block;
-    margin-bottom:15px;
+margin-bottom:15px;
+height:262px;
+width:350px;
 }
 
+
 .news-title{
-margin-bottom:15px;
-    font-family: 'Open Sans Semi-bold', sans-serif;
-    font-size: 18px;
-    margin-bottom: 31px;
+font-family: 'Open Sans Semi-bold', sans-serif;
+font-size: 18px;
+margin-bottom: 31px;
 }
 .news-title::after{
-    content: "_____________" ;
-    color: #1abc9c;
-    letter-spacing:-2px;
+    display:block;
+    content:"";
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    margin-top: 10px;
 }
 .news-article{
     margin-bottom:15px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    height: 440px;
+    overflow: hidden;
 }
 
 /* buttons*/
 .news-button{
-    display:block;
     font-family: 'Open Sans light', sans-serif;
     font-size: 16px;
     color:#fff;
     width: 160px;
     height: 51px;
     background-color:#4ec6ab;
-    border-color:#dddcd7;
     border-width: 0px;
     cursor: pointer;
-    margin-bottom: 48px;
+    float: left;
 }
 
 
