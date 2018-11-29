@@ -1,0 +1,332 @@
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('/font/fontello.eot?31919061');
+  src: url('./font/fontello.eot?31919061#iefix') format('embedded-opentype'),
+  url('./font/fontello.woff?31919061') format('woff'),
+  url('./font/fontello.ttf?31919061') format('truetype'),
+  url('./font/fontello.svg?31919061#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-clock:before { content: '\e800'; } /* '' */
+.icon-basket:before { content: '\e801'; } /* '' */
+.icon-heart-empty:before { content: '\e802'; } /* '' */
+.icon-shuffle:before { content: '\e803'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-angle-right:before { content: '\f105'; } /* '' */
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+*,
+*::before {
+    box-sizing: inherit;
+}
+*::after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.wrapper {
+    width: 1110px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+/*header*/
+
+.header{
+    margin-bottom: 23px;
+}
+.nav-section{
+    line-height: 22px;
+}
+.logo{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Roboto light', sans-serif;
+    color: #555252;
+    text-decoration: none;
+}
+.logo::first-letter{
+    color: #1abc9c;
+    font-family: 'Roboto black', sans-serif;
+
+}
+.menu{
+    float: right;
+}
+.menu-item{
+    margin-right: 36px;
+    list-style-type: none;
+    float: left;
+}
+.menu-item:last-child{
+    margin-right: 0px;
+}
+
+.menu-link:hover{
+    color: #1abc9c;
+}
+.menu-link{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Open Sans Bold', sans-serif;
+    color: #0f0101;
+}
+/*slider*/
+.slider-ctrl{
+    top: 50%;
+    transform: translateY(-50%);
+    width: 104px;
+    height: 104px;
+    background-color:rgba(26, 188, 156, .65);
+    border: 0px;
+    font-size: 100px;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight:normal;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+
+}
+.slider-ctrl:hover{
+    background-color:rgba(26, 188, 156, 1);
+}
+
+.slider-ctrl-prev{
+    left: 0;
+}
+.slider-ctrl-next{
+    right: 0;
+}
+
+.slider{
+    height: 600px;
+    position: relative;
+}
+
+.slides{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.slides-img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+ }
+.slides-item{
+    position: relative;
+}
+.slider-des{
+    font-family: 'Roboto black', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.slide-des-position{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-family: 'Roboto light', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+
+
+}
+.slider-link{
+    text-decoration: none;
+    color: #fff;
+}
+.slider-link:hover{
+    color: #1abc9c;
+}
+/*main*/
+.product-section{
+    background-color: #e9f0fd;
+}
+.section-title {
+    text-align: center;
+    font-family: 'Roboto black', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+    color: #515151;
+    padding-top:76px;
+    height: 253px;
+}
+
+.section-title::after{
+    display:block;
+    content:"";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.product-box:hover > .product-des {
+     background-color: #1abc9c;
+}
+
+.product-box:hover .overlay{
+    opacity: 1;
+    background-color:rgba(0, 0, 0, .55);
+}
+.overlay{
+    position: absolute;
+    opacity: 0;
+    background-color: #0f0101;
+    width: 235px;
+    height: 262px;
+    top: 10px;
+    right: 10px;
+    font-size: 0px;
+}
+.overlay-icons{
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 166px;
+    height: 107px;
+    transform:translate(-50%, -50%);
+}
+.overlay-button{
+    font-size: 30px;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight:normal;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color:#fff;
+    background-color:rgba(255, 255, 255, 0);
+}
+.overlay-button:nth-last-child(2){
+    margin-right: 0px;
+}
+.overlay-button:hover{
+    background-color: #1abc9c;
+    border: 0px;
+}
+.overlay-last-button{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    width: 166px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color:#fff;
+    background-color:rgb(50, 50, 50);
+}
+.overlay-last-button::first-letter{
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    float: left;
+    padding-left: 15px;
+}
+
+.overlay-last-button:hover{
+    background-color: #1abc9c;
+    border: 0px;
+}
+.product-box{
+    position: relative;
+    float: left;
+    width: 255px;
+    height: 322px;
+    margin-right: 30px;
+    list-style-type: none;
+    display:block;
+    font-family: 'Roboto black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.product-box:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.product-des{
+    width: 100%;
+    color: #fff;
+    background-color: #323232;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+}
+.product-name{
+    width: 201px;
+    float: left;
+    padding-left: 13px;
+}
+.product-price{
+    width: 54px;
+    color: #fff;
+    float: right;
+    background-color: rgba(255, 255, 255, .44);
+    padding: 0 12px;
+}
+.product-img{
+    width: 255px;
+    height: 282px;
+    max-width: 100%;
+}
+.product{
+    padding-bottom: 100px;
+}
+/*footer*/
+.footer-rights{
+    font-family: 'PT Sans bold', sans-serif;
+    height: 88px;
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    line-height: 88px;
+}
+.footer-rights span{
+    color: #1abc9c;
+}
+
+
+
+
