@@ -1,19 +1,27 @@
 
 
-@font-face {
-  font-family: 'fontello';
-  src: url('/font/fontello.eot?31919061');
-  src: url('./font/fontello.eot?31919061#iefix') format('embedded-opentype'),
-  url('./font/fontello.woff?31919061') format('woff'),
-  url('./font/fontello.ttf?31919061') format('truetype'),
-  url('./font/fontello.svg?31919061#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
+
+.icon-clock{
+background-image: url(../img/icons/clock.png);
+width: 48px;
+height: 48px;
 }
-.icon-clock:before { content: '\e800'; } /* '' */
-.icon-basket:before { content: '\e801'; } /* '' */
-.icon-heart-empty:before { content: '\e802'; } /* '' */
-.icon-shuffle:before { content: '\e803'; } /* '' */
+.icon-basket{
+background-image: url(../img/icons/busket1.png);
+width: 164px;
+height: 48px;
+display: block;
+}
+.icon-heart-empty{
+background-image: url(../img/icons/heart.png);
+width: 48px;
+height: 48px;
+}
+.icon-shuffle{
+background-image: url(../img/icons/shuffle.png);
+width: 48px;
+height: 48px;
+}
 
 
 html{
@@ -49,13 +57,13 @@ img {
     width: 1110px;
     height: auto;
     margin: 0 auto;
-    padding-top: 40px;
     position: relative;
 }
 /*header*/
 
 .header{
     margin-bottom: 23px;
+    padding-top: 40px;
 }
 .nav-section{
     line-height: 22px;
@@ -105,11 +113,9 @@ img {
     background-size: cover;
 }
 .slider-title{
-    top: 50%;
-    transform: translateY(-50%);
+
 }
 .slider-ctrl{
-
     width: 104px;
     height: 104px;
     opacity: .65;
@@ -117,6 +123,7 @@ img {
     position:absolute;
     cursor: pointer;
     z-index: 10;
+    transform: translateY(226px);
 
 }
 .slider-ctrl:hover{
@@ -135,11 +142,12 @@ img {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    position: relative;
+    position: absolute;
     text-transform: uppercase;
     color: #fff;
-    padding-left: 154px;
-    padding-right: 154px;
+    transform: translate(185px, 220px);
+   
+
 }
 .slider-des{
     font-family: 'Roboto black', sans-serif;
@@ -152,15 +160,17 @@ img {
 /*main*/
 .product-section{
     background-color: #e9f0fd;
+    padding-bottom: 100px;
 }
 .section-title {
+    position: relative;
+    top: 100px;
     text-align:center;
     font-family: 'Roboto black', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     color: #515151;
-    padding-top:76px;
     height: 253px;
 }
 .section-title::after{
@@ -180,17 +190,16 @@ img {
 
 .product-box:hover .overlay{
     opacity: 1;
-    background-color:rgba(0, 0, 0, .55);
 }
 .overlay{
     position: absolute;
     opacity: 0;
     background-color: #0f0101;
-    width: 235px;
-    height: 262px;
-    top: 10px;
-    right: 10px;
+    width: 100%;
+    height: 282px;
     font-size: 0px;
+    border: 10px solid rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, .549)
 }
 .overlay-icons{
     opacity: 1;
@@ -201,6 +210,15 @@ img {
     width: 166px;
     height: 107px;
     transform:translate(-50%, -50%);
+    list-style-type: none;
+}
+.overlay-li{
+    display:block;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    float: left;
 }
 .overlay-button{
     font-size: 30px;
@@ -216,7 +234,7 @@ img {
     color:#fff;
     background-color:rgba(255, 255, 255, 0);
 }
-.overlay-button:nth-last-child(2){
+.overlay-li:nth-last-child(2){
     margin-right: 0px;
 }
 .overlay-button:hover{
@@ -224,26 +242,18 @@ img {
     border: 0px;
 }
 .overlay-last-button{
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 50px;
-    font-family: 'Open Sans', sans-serif;
-    height: 50px;
-    width: 166px;
+    height: 48px;
+    width: 164px;
     border: 1px solid #fff;
     cursor: pointer;
     color:#fff;
     background-color:rgb(50, 50, 50);
 }
-.overlay-last-button::first-letter{
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    float: left;
-    padding-left: 15px;
+.last-button-des{
+    display: block;
+    width: 114px;
+    float:right;
 }
-
 .overlay-last-button:hover{
     background-color: #1abc9c;
     border: 0px;
@@ -289,9 +299,6 @@ img {
     width: 255px;
     height: 282px;
     max-width: 100%;
-}
-.product{
-    padding-bottom: 100px;
 }
 /*footer*/
 .footer-rights{
