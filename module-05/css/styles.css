@@ -14,8 +14,7 @@
 .icon-basket:before { content: '\e801'; } /* '' */
 .icon-heart-empty:before { content: '\e802'; } /* '' */
 .icon-shuffle:before { content: '\e803'; } /* '' */
-.icon-angle-left:before { content: '\f104'; } /* '' */
-.icon-angle-right:before { content: '\f105'; } /* '' */
+
 
 html{
     box-sizing: border-box;
@@ -51,7 +50,7 @@ img {
     height: auto;
     margin: 0 auto;
     padding-top: 40px;
-
+    position: relative;
 }
 /*header*/
 
@@ -98,83 +97,64 @@ img {
     color: #0f0101;
 }
 /*slider*/
-.slider-ctrl{
+.slider{
+    height: 600px;
+    width: auto;
+    position: relative;
+    background-image: url(../img/background/homework-05.jpg);
+    background-size: cover;
+}
+.slider-title{
     top: 50%;
     transform: translateY(-50%);
+}
+.slider-ctrl{
+
     width: 104px;
     height: 104px;
-    background-color:rgba(26, 188, 156, .65);
+    opacity: .65;
     border: 0px;
-    font-size: 100px;
-    font-family: "fontello";
-    font-style: normal;
-    font-weight:normal;
-    color: #fff;
-    position: absolute;
+    position:absolute;
     cursor: pointer;
     z-index: 10;
 
 }
 .slider-ctrl:hover{
-    background-color:rgba(26, 188, 156, 1);
+    opacity: 1;
 }
 
 .slider-ctrl-prev{
     left: 0;
+    background-image: url(../img/icons/left.jpg)
 }
 .slider-ctrl-next{
     right: 0;
+    background-image: url(../img/icons/right.jpg)
 }
-
-.slider{
-    height: 600px;
-    position: relative;
-}
-
 .slides{
     margin: 0px;
     padding: 0px;
     list-style: none;
-}
-.slides-img {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
- }
-.slides-item{
     position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 154px;
+    padding-right: 154px;
 }
 .slider-des{
     font-family: 'Roboto black', sans-serif;
     font-size: 60px;
-    text-transform: uppercase;
-    color: #fff;
-}
-.slide-des-position{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    font-family: 'Roboto light', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #fff;
-
-
 }
 .slider-link{
-    text-decoration: none;
-    color: #fff;
-}
-.slider-link:hover{
-    color: #1abc9c;
+    font-family: 'Roboto light', sans-serif;
+    font-size: 24px;
 }
 /*main*/
 .product-section{
     background-color: #e9f0fd;
 }
 .section-title {
-    text-align: center;
+    text-align:center;
     font-family: 'Roboto black', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -183,7 +163,6 @@ img {
     padding-top:76px;
     height: 253px;
 }
-
 .section-title::after{
     display:block;
     content:"";

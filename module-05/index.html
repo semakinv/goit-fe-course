@@ -11,8 +11,7 @@
     <title>Homework Module 05 FullStack11 GoIT(main)</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
+        <header class="header wrapper">
             <nav class="nav-section clearfix">
                 <a class="logo" href="#">mart</a>
                 <ul class="menu">
@@ -26,27 +25,23 @@
             </nav>
         </header>
         <main>
-            <aside>
             <div class="slider">
-                <button class="slider-ctrl slider-ctrl-prev"><span class="icon-angle-left"></span></button>
-                <button class="slider-ctrl slider-ctrl-next"><span class="icon-angle-right"></span></button>
-                <ul class="slides">
-                    <li class="slides-item">
-                            <img class="slides-img" src="./img/background/homework-05.jpg" alt="">
-                        <div class="slide-des-position">
-                            <p class="slider-des" >AFFORDABLE PARIS TOURS</p>
-                            <a class="slider-link" href="#">CITY TOURS</a>/
-                            <a class="slider-link" href="#">TOUR TICKETS</a>/
-                            <a class="slider-link" href="#">TOUR GUIDES</a>
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="slider-title wrapper">
+                    <ul class="slides">
+                        <li class="slides-item">
+                                <button class="slider-ctrl slider-ctrl-prev"></button>
+                                <button class="slider-ctrl slider-ctrl-next"></button>
+                                <p class="slider-des" >Affordable Paris Tours</p>
+                                <p class="slider-link">City Tours/Tour Tickets/Tour Guides</p>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
-            </aside>
             <section class="product-section">
-                <h2 class="section-title">NEW COLLECTION</h2>
+                <div class="wrapper">
+                <h2 class="section-title">New Collection</h2>
                 <ul class="product clearfix">
                     <li class="product-box">
                         <div class="overlay">
@@ -59,7 +54,7 @@
                         </div>
                         <img height="282" width="255" class="product-img" src="./img/products/category-2.jpg" alt="">
                         <div class="product-des">
-                            <p class="product-name">WOMAN shirt</p>
+                            <p class="product-name">Woman shirt</p>
                             <p class="product-price">$26</p>
                         </div>
                     </li>
@@ -74,7 +69,7 @@
                         </div>
                         <img height="282" width="255" class="product-img" src="./img/products/category-5.jpg" alt="">
                         <div class="product-des">
-                            <p class="product-name">YELLOW Tshirt</p>
+                            <p class="product-name">Yellow Tshirt</p>
                             <p class="product-price">$31</p>
                         </div>
                     </li>
@@ -108,8 +103,8 @@
                             <p class="product-price">$56</p>
                         </div>
                     </li>
-                    
                 </ul>
+                </div>
             </section>
 
         </main>
@@ -120,6 +115,5 @@
                 </p>
             </div>
         </footer>
-    </div>
 </body>
 </html>
