@@ -29,11 +29,13 @@
 .head{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    min-height: 50px;
     align-items: flex-end;
+    margin-bottom: 120px;
 }
 
 .logo{
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -52,6 +54,13 @@
 
 .menu-item{
     cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.underline-menu{
+    text-decoration: none;
+    color: #95e1d3;
+    transition: color 0.2s linear;
 }
 
 .underline-menu::after{
@@ -62,22 +71,23 @@
     background-color: #f38181;
     margin-top:10px;
     opacity: 0;
-}
-
-.menu-item:hover > .underline-menu::after{
-    opacity: 1;
-    z-index: 10;
     transition: opacity 0.2s linear;
 }
 
-.menu-item:hover{
+
+
+.menu-item:hover > .underline-menu::after{
+    opacity: 1;
+}
+
+.underline-menu:hover{
     color: #f38181;
-    transition: color 0.2s linear;
 }
 
 /* Main*/
 
 .underline::after{
+    display: block;
     content:"";
     width: 60px;
     height: 3px;
@@ -100,9 +110,10 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     color: #333;
 }
 
@@ -113,14 +124,17 @@
 }
 
 .services-box{
-    width: 100%;
-    padding-top: 120px;
+    margin-bottom: 100px;
 }
 
 .service-box{
     width: 382px;
     display: flex;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
+}
+
+.service-box:nth-last-child(-n+3){
+    margin-bottom: 0px;
 }
 
 .services-icons{
@@ -151,18 +165,42 @@
 
 /*who we are*/
 
+.team-box{
+    padding-bottom: 82px;
+}
+
+.person-box{
+    transition: transform 0.2s linear;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.person-box:hover > .team-img{
+    transform:translate(-10px, -10px);
+}
+
+.person-box:hover > .overlay{
+    opacity: 1;
+    z-index: 3;
+}
+
 .des-team{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
-    padding-bottom: 92px;
+    margin-bottom: 92px;
+    margin-left: 130px;
+    margin-right: 100px;
     color: #999;
 }
 
 .team-img{
     height: 470px;
     width: 380px;
+    background-color: #95e1d3;
 }
 
 .person-names{
@@ -171,9 +209,10 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 26px;
     color: #333;
+    display: block;
 }
+
 
 .teams-names{
     font-family: 'Roboto', sans-serif;
@@ -181,13 +220,8 @@
     font-size: 15px;
     font-style: italic;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 82px;
     color: #999;
-}
-
-.space-del{
-    font-size: 0px;
+    display:block;
 }
 
 /*overlay*/
@@ -200,13 +234,9 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, rgba(234, 255, 208, .8), rgba(252, 227, 138, .8),rgba(243, 129, 129, .8));
-    box-shadow:10px 10px #95e1d3;
-
-}
-
-.overlay:hover{
-    opacity: 1;
     transition: opacity 0.2s linear;
+    box-shadow:10px 10px #95e1d3;
+    transform:translate(-10px, -10px);
 }
 
 .social-ic{
@@ -222,16 +252,16 @@
     background-color: #fce38a;
 }
 
-.soc-ico:hover{
-    background-color: #95e1d3;
-    transition: color 0.2s linear;
-}
-
 .icon-f{
     background-image: url(../img/icons/facebook.png);
     width: 56px;
     height: 56px;
     display: block;
+    transition: color 0.2s linear;
+}
+
+.icon-f:hover{
+    background-color: #95e1d3;
 }
 
 .icon-t{
@@ -239,6 +269,11 @@
     width: 56px;
     height:56px ;
     display: block;
+    transition: color 0.2s linear;
+}
+
+.icon-t:hover{
+    background-color: #95e1d3;
 }
 
 .icon-p{
@@ -246,6 +281,11 @@
     width: 56px;
     height:56px ;
     display: block;
+    transition: color 0.2s linear;
+}
+
+.icon-p:hover{
+    background-color: #95e1d3;
 }
 
 .icon-i{
@@ -253,20 +293,19 @@
     width: 56px;
     height:56px ;
     display: block;
+    transition: color 0.2s linear;
+}
+
+.icon-i:hover{
+    background-color: #95e1d3;
 }
 /*footer */
 
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    margin-bottom: 10px;
-}
-
 .footer-fild{
+    border-top: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .footer-form{
@@ -308,6 +347,9 @@
     align-items: center;
 }
 
-.footer-rights span{
+.footer-link{
+    display: inline-block;
     color: #f38181;
+    text-decoration: none;
+    margin-left: 0.3rem;
 }
