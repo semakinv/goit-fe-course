@@ -31,7 +31,7 @@
     justify-content: space-between;
     min-height: 50px;
     align-items: flex-end;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .logo{
@@ -103,6 +103,7 @@
     font-weight: 400;
     font-size: 24px;
     color: #333;
+    line-height: 60px;
 }
 
 .second-subtitle{
@@ -113,8 +114,9 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
     color: #333;
+    line-height: 30px;
 }
 
 /*we work with*/
@@ -124,36 +126,62 @@
 }
 
 .services-box{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .service-box{
-    width: 382px;
-    display: flex;
+    position: relative;
+    width: 310px;
     margin-bottom: 96px;
+    padding-left: 90px;
 }
 
 .service-box:nth-last-child(-n+3){
     margin-bottom: 0px;
 }
 
-.services-icons{
+.service-box::before{
+    position: absolute;
+    left: 30px;
+    display: inline-block;
+    content: '';
     height: 32px;
     width: 32px;
-    margin: 0 20px;
 }
 
-.services-des-box{
-    width: 300px;
+.service-box:nth-child(1)::before{
+    background-image: url(../img/icons/photography.png);
 }
+
+.service-box:nth-child(2)::before{
+    background-image: url(../img/icons/web_design.png);
+}
+
+.service-box:nth-child(3)::before{
+    background-image: url(../img/icons/creativity.png);
+}
+
+.service-box:nth-child(4)::before{
+    background-image: url(../img/icons/seo.png);
+}
+
+.service-box:nth-child(5)::before{
+    background-image: url(../img/icons/css_html.png);
+}
+
+.service-box:nth-child(6)::before{
+    background-image: url(../img/icons/digital.png);
+}
+
+
 
 .services-name{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
-    padding-bottom: 10px;
     color: #333;
+    margin-bottom: 16px;
 }
 
 .services-des{
@@ -169,13 +197,6 @@
     padding-bottom: 82px;
 }
 
-.person-box{
-    transition: transform 0.2s linear;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .person-box:hover > .team-img{
     transform:translate(-10px, -10px);
@@ -201,6 +222,8 @@
     height: 470px;
     width: 380px;
     background-color: #95e1d3;
+    transition: transform 0.2s linear;
+    margin-bottom: 10px;
 }
 
 .person-names{
@@ -210,7 +233,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #333;
-    display: block;
+    line-height: 42px;
 }
 
 
@@ -221,7 +244,7 @@
     font-style: italic;
     text-align: center;
     color: #999;
-    display:block;
+    line-height: 1;
 }
 
 /*overlay*/
@@ -257,7 +280,7 @@
     width: 56px;
     height: 56px;
     display: block;
-    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
 }
 
 .icon-f:hover{
@@ -269,7 +292,7 @@
     width: 56px;
     height:56px ;
     display: block;
-    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
 }
 
 .icon-t:hover{
@@ -281,7 +304,7 @@
     width: 56px;
     height:56px ;
     display: block;
-    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
 }
 
 .icon-p:hover{
@@ -293,7 +316,7 @@
     width: 56px;
     height:56px ;
     display: block;
-    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
 }
 
 .icon-i:hover{
