@@ -103,6 +103,7 @@
 }
 
 .underline-menu{
+    display: block;
     text-decoration: none;
     color: #000;
     font-size: 14px;
@@ -120,6 +121,10 @@
 }
 
 /* Main*/
+.title-section{
+    padding-bottom: 118px;
+}
+
 .main-title{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -148,7 +153,6 @@
     padding-top: 83px;
     text-align: center;
     width: 278px;
-    padding-bottom: 118px;
 }
 .services-item::before{
     position: absolute;
@@ -218,7 +222,7 @@
     text-align: center;
     color: #777;
     line-height: 50px;
-    padding-bottom: 58px;
+    margin-bottom: 58px;
 }
 
 .interactive-forms{
@@ -269,10 +273,6 @@
 .send-button{
     height: 66px;
     width: 240px;
-    transform: translateX(-50%);
-    align-items: center;
-    position: absolute;
-    left: 50%;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
@@ -288,4 +288,11 @@
 
 .send-button:focus{
     background-color: #fed136;
+}
+
+.action-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
 }
