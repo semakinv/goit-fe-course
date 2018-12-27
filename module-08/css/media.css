@@ -1,0 +1,172 @@
+@media (max-width: 747px) {
+
+    .logo{
+        margin-bottom: 28px;
+    }
+
+    .menu{
+        margin-bottom: 116px;
+    }
+    .person-list:last-child{
+        margin-bottom: 0px;
+}
+
+    .mine-title{
+        font-size: 30px;
+    }
+
+    .mine-subtitle{
+        font-size: 18px;
+    }
+
+.find-button{
+    width: 280px;
+}
+
+.person-list {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*tablet
+-------------------------------------------------------------------------------*/
+}
+
+@media (min-width: 748px) {
+    .head-box{
+    background-image: url(../img/tablet/promo-back.jpg);
+    max-width: 100%;
+    height: 654px;
+    padding-top: 46px;
+    width: 667px;
+    margin-bottom: 69px;
+    }
+
+    .wrapper{
+        width: 748px;
+    }
+
+    .menu{
+        display: flex;
+        float: right;
+    }
+
+    .logo{
+        display: flex;
+        float: left;
+    }
+
+    .heder-titles{
+        top: 214px;
+    }
+
+    .mine-title{
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+
+    .mine-subtitle{
+        font-size: 24px;
+        margin-bottom: 33px;
+    }
+
+    .find-button{
+    width: 226px;
+}
+
+
+
+.partners-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.person-list {
+    width: 236px;
+    margin-bottom: 38px;
+}
+
+.person-list:nth-last-child(-n+2){
+        margin-bottom: 0px;
+}
+
+.interest {
+    margin: 0 2px;
+}
+
+.partner-title{
+    margin-bottom: 31px;
+}
+
+.footer-button{
+    width: 188px;
+}
+}
+
+/*
+--------------------------------------------------------------------------------------
+*/
+
+@media (min-width: 748px) and (max-width: 939px) {
+   .persons-box{
+       width:492px;
+   }
+
+    .logo{
+        margin-left: 48px;
+    }
+
+    .menu{
+        margin-right: 30px;
+    }
+}
+
+/*Desktop
+----------------------------------------------------------------------------------*/
+@media (min-width: 940px) {
+   .wrapper{
+        width: 940px;
+    }
+
+    .head-box{
+    background-image: url(../img/Desktop/promo-back.jpg);
+    background-size: auto;
+    background-position:center;
+    max-width: 100%;
+    height: 680px;
+    margin-bottom: 65px;
+    padding-top: 20px;
+    }
+
+    .logo{
+        padding-top: 26px;
+    }
+
+    .menu{
+        padding-top: 20px;
+    }
+
+    .find-button{
+    width: 226px;
+}
+
+    .mine-title{
+    font-size: 52px;
+    }
+
+    .mine-subtitle{
+        font-size: 24px;
+    }
+
+    .partners-list{
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    .person-list {
+    width: 220px;
+    margin-bottom: 0;
+}
+}
