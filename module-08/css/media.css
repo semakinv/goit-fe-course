@@ -1,15 +1,22 @@
 @media (max-width: 747px) {
 
-    .logo{
-        margin-bottom: 28px;
+    .menu{
+        height: 214px;
+        flex-wrap:wrap-reverse;
     }
 
-    .menu{
-        margin-bottom: 116px;
+    .logo{
+        width: 100%;
+        justify-content: center;
     }
-    .person-list:last-child{
-        margin-bottom: 0px;
-}
+
+    .auth-item{
+        align-self: flex-end;
+    }
+
+    .find-button{
+        width: 280px;
+    }
 
     .mine-title{
         font-size: 30px;
@@ -19,42 +26,50 @@
         font-size: 18px;
     }
 
-.find-button{
-    width: 280px;
-}
+    .person-list {
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.person-list {
-    width: 220px;
-    margin-left: auto;
-    margin-right: auto;
+    .person-list:last-child{
+        margin-bottom: 0px;
+    }
 }
 
 /*tablet
 -------------------------------------------------------------------------------*/
-}
 
-@media (min-width: 748px) {
-    .head-box{
-    background-image: url(../img/tablet/promo-back.jpg);
-    max-width: 100%;
-    height: 654px;
-    padding-top: 46px;
-    width: 667px;
-    margin-bottom: 69px;
-    }
-
+@media (min-width: 747px) {
     .wrapper{
         width: 748px;
     }
 
+    .head-box{
+        background-image: url(../img/tablet/promo-back.jpg);
+        max-width: 100%;
+        height: 654px;
+        padding-top: 46px;
+        width: 667px;
+    }
+
     .menu{
         display: flex;
-        float: right;
+        justify-content: flex-end;
+        margin-right: 30px;
     }
 
     .logo{
-        display: flex;
-        float: left;
+        margin-left: 48px;
+    }
+
+    .find-button{
+        width: 226px;
+    }
+
+    .persons-box{
+        width:492px;
+        padding-top: 69px;
     }
 
     .heder-titles{
@@ -71,55 +86,28 @@
         margin-bottom: 33px;
     }
 
-    .find-button{
-    width: 226px;
-}
-
-
-
-.partners-list{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.person-list {
-    width: 236px;
-    margin-bottom: 38px;
-}
-
-.person-list:nth-last-child(-n+2){
-        margin-bottom: 0px;
-}
-
-.interest {
-    margin: 0 2px;
-}
-
-.partner-title{
-    margin-bottom: 31px;
-}
-
-.footer-button{
-    width: 188px;
-}
-}
-
-/*
---------------------------------------------------------------------------------------
-*/
-
-@media (min-width: 748px) and (max-width: 939px) {
-   .persons-box{
-       width:492px;
-   }
-
-    .logo{
-        margin-left: 48px;
+    .partners-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .menu{
-        margin-right: 30px;
+    .person-list {
+        width: 236px;
+        margin-bottom: 38px;
+    }
+
+    .person-list:nth-last-child(-n+2){
+        margin-bottom: 0px;
+    }
+
+    .partner-title{
+        margin-bottom: 31px;
+    }
+
+    .footer-button{
+        width: 188px;
     }
 }
 
@@ -127,33 +115,32 @@
 ----------------------------------------------------------------------------------*/
 @media (min-width: 940px) {
    .wrapper{
-        width: 940px;
-    }
-
-    .head-box{
-    background-image: url(../img/Desktop/promo-back.jpg);
-    background-size: auto;
-    background-position:center;
-    max-width: 100%;
-    height: 680px;
-    margin-bottom: 65px;
-    padding-top: 20px;
-    }
-
-    .logo{
-        padding-top: 26px;
+       width: 940px;
     }
 
     .menu{
-        padding-top: 20px;
+        margin-right: auto;
+    }
+
+    .head-box{
+        background-image: url(../img/Desktop/promo-back.jpg);
+        background-size: auto;
+        background-position:center;
+        width: 100%;
+        height: 660px;
+        padding-top: 40px;
+    }
+
+    .persons-box{
+        padding-top: 65px;
     }
 
     .find-button{
-    width: 226px;
-}
+        width: 226px;
+    }
 
     .mine-title{
-    font-size: 52px;
+        font-size: 52px;
     }
 
     .mine-subtitle{
@@ -166,7 +153,7 @@
     }
 
     .person-list {
-    width: 220px;
-    margin-bottom: 0;
-}
+        width: 220px;
+        margin-bottom: 0;
+    }
 }
