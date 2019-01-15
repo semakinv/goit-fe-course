@@ -13,42 +13,49 @@
 }
 
 .wrapper {
-    width: 320px;
+    min-width: 320px;
     height: auto;
     margin: 0 auto;
 }
 
 .head-box{
-    background-image: url(../img/mobile/promo-back.jpg);
-    max-width: 320px;
+    display: block;
+    background-image: url(../img/Desktop/promo-back.jpg);
+    background-position:center;
+    width: 100%;
     height: 518px;
     padding-top: 22px;
-    position: relative;
 }
 
 .menu{
     display: flex;
     justify-content: center;
+    width: 100%;
     }
 
 .heder-titles{
-    top: 222px;
-    transform: translateY(50%);
     width: 100%;
+}
+
+.auth-link{
+    display: block;
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo{
     display:flex;
-    flex: 1 1 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    justify-content: flex-start;
-    align-items: center;
-}
+    justify-content: center;
+    margin-top: 114px;
+    height: 50px;
 
+
+}
 .auth-item{
     display:flex;
     font-family: 'Montserrat', sans-serif;
@@ -79,17 +86,12 @@
 }
 
 .person-list{
+    position: relative;
     list-style: none;
     margin-bottom: 24px;
 }
-.auth-link{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
 
 .mine-title{
-    display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
@@ -104,7 +106,6 @@
 }
 
 .mine-subtitle{
-    display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
@@ -142,15 +143,6 @@
     margin-bottom: 15px;
 }
 
-.person-card{
-    display: block;
-    position: relative;
-    width: auto;
-    text-decoration: none;
-    color: black;
-
-}
-
 .person-name{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -160,47 +152,43 @@
 }
 
 .img-wrapper{
-    position: relative;
+    display: block;
     justify-content: center;
     height: 122px;
     width: 122px;
     margin: auto;
+    border-radius: 50%;
 }
 
-.person-img{
-    display: block;
-    border-radius: 50%;
-    height: 122px;
-    width: 122px;
-}
-.img-wrapper::before{
+.person-list::after{
+    position: absolute;
     content: " ";
     display: block;
-    position:absolute;
-    bottom: 0;
-    right: 0;
+    top: 86px;
+    left: 50%;
+    transform: translateX(72%);
     border-radius: 50%;
     border: 2px solid #fff;
     height: 32px;
     width: 32px;
 }
-.person-list:nth-child(1)> nav .img-wrapper::before{
+.person-list:nth-child(1)::after{
     background-color: rgb(255, 78, 80);
     background-image: url(../img/tv.png);
 }
 
-.person-list:nth-child(2)> nav .img-wrapper::before{
+.person-list:nth-child(2)::after{
     background-color: rgb(255, 165, 7);
     background-image: url(../img/flask.png);
 }
 
-.person-list:nth-child(3)> nav .img-wrapper::before{
+.person-list:nth-child(3)::after{
     background-color: rgb(28, 215, 173);
     background-image: url(../img/cup.png);
 }
 
 
-.person-list:nth-child(4)> nav .img-wrapper::before{
+.person-list:nth-child(4)::after{
     background-color: rgb(78, 115, 219);
     background-image: url(../img/flight.png);
 }
@@ -214,7 +202,7 @@
 
 
 .footer-button{
-    display:block;
+    display: block;
     height: 36px;
     width: 276px;
     border-radius: 20px;
@@ -224,7 +212,7 @@
     font-size: 14px;
     font-weight: 700;
     color: rgb(255, 78, 80);
-    text-align: center;
-    text-decoration: none;
     line-height: 40px;
+    background-color: #fff;
+    outline: none;
 }

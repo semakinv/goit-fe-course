@@ -1,14 +1,4 @@
-@media (max-width: 747px) {
-
-    .menu{
-        height: 214px;
-        flex-wrap:wrap-reverse;
-    }
-
-    .logo{
-        width: 100%;
-        justify-content: center;
-    }
+@media (max-width: 767px) {
 
     .auth-item{
         align-self: flex-end;
@@ -40,27 +30,39 @@
 /*tablet
 -------------------------------------------------------------------------------*/
 
-@media (min-width: 747px) {
+@media (min-width: 767px) {
+
     .wrapper{
-        width: 748px;
+        width: 747px;
     }
 
     .head-box{
-        background-image: url(../img/tablet/promo-back.jpg);
-        max-width: 100%;
+        display: flex;
         height: 654px;
         padding-top: 46px;
-        width: 667px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .menu{
-        display: flex;
-        justify-content: flex-end;
         margin-right: 30px;
+        width: auto;
     }
 
     .logo{
         margin-left: 48px;
+        margin-top: 0;
+        height: 36px;
+        align-items: center;
+    }
+
+     nav + nav{
+        order: -1;
+    }
+
+    .heder-titles{
+        height: 352px;
     }
 
     .find-button{
@@ -70,10 +72,6 @@
     .persons-box{
         width:492px;
         padding-top: 69px;
-    }
-
-    .heder-titles{
-        top: 214px;
     }
 
     .mine-title{
@@ -91,6 +89,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 64px;
     }
 
     .person-list {
@@ -113,22 +112,21 @@
 
 /*Desktop
 ----------------------------------------------------------------------------------*/
-@media (min-width: 940px) {
+@media (min-width: 960px) {
    .wrapper{
        width: 940px;
     }
 
     .menu{
         margin-right: auto;
+        width: auto;
     }
 
     .head-box{
-        background-image: url(../img/Desktop/promo-back.jpg);
         background-size: auto;
-        background-position:center;
-        width: 100%;
         height: 660px;
         padding-top: 40px;
+        width: 100%;
     }
 
     .persons-box{
