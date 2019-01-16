@@ -37,6 +37,7 @@
     }
 
     .head-box{
+        background-image: url(../img/tablet/promo-back.jpg);
         display: flex;
         height: 654px;
         padding-top: 46px;
@@ -48,6 +49,7 @@
     .menu{
         margin-right: 30px;
         width: auto;
+        justify-content: flex-end;
     }
 
     .logo{
@@ -55,10 +57,14 @@
         margin-top: 0;
         height: 36px;
         align-items: center;
+
     }
 
-     nav + nav{
-        order: -1;
+    header > nav {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .heder-titles{
@@ -117,13 +123,8 @@
        width: 940px;
     }
 
-    .menu{
-        margin-right: auto;
-        width: auto;
-    }
-
     .head-box{
-        background-size: auto;
+        background-image: url(../img/Desktop/promo-back.jpg);
         height: 660px;
         padding-top: 40px;
         width: 100%;
@@ -133,20 +134,7 @@
         padding-top: 65px;
     }
 
-    .find-button{
-        width: 226px;
-    }
-
-    .mine-title{
-        font-size: 52px;
-    }
-
-    .mine-subtitle{
-        font-size: 24px;
-    }
-
     .partners-list{
-        justify-content: space-between;
         margin-bottom: 36px;
     }
 
