@@ -47,25 +47,29 @@
     }
 
     .menu{
+        margin-right: 30px;
         width: auto;
         justify-content: flex-end;
     }
 
     .logo{
+        margin-left: 48px;
         margin-top: 0;
         height: 36px;
         align-items: center;
 
     }
 
-    .header-nav{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin-bottom: 124px;
-}
+    header > nav {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-
+    .heder-titles{
+        height: 352px;
+    }
 
     .find-button{
         width: 226px;

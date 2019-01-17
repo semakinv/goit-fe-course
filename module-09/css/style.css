@@ -1,0 +1,218 @@
+*,
+*::before {
+    box-sizing: inherit;
+}
+
+*::after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.head-box{
+    display: block;
+    background-image: url(../img/mobile/promo-back.jpg);
+    background-position:center;
+    width: 100%;
+    height: 518px;
+    padding-top: 22px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+.heder-titles{
+    width: 100%;
+}
+
+.auth-link{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 114px;
+    height: 50px;
+
+
+}
+.auth-item{
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: none;
+    height:32px;
+    width:86px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0)
+}
+
+.auth-item:hover{
+    border: 2px solid #fff;
+}
+
+
+/* partner choise*/
+.persons-box{
+    padding-bottom: 56px;
+    padding-top: 63px;
+}
+
+.partners-list{
+    margin-bottom: 22px;
+}
+
+.person-list{
+    position: relative;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.mine-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+
+}
+
+.mine-subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.find-button{
+    border-radius: 20px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(255, 78, 80);
+    text-align: center;
+    margin: auto;
+    line-height: 40px;
+
+}
+
+.partner-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.person-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+}
+
+.img-wrapper{
+    display: block;
+    justify-content: center;
+    height: 122px;
+    width: 122px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.person-list::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    top: 86px;
+    left: 50%;
+    transform: translateX(72%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 32px;
+    width: 32px;
+}
+.person-list:nth-child(1)::after{
+    background-color: rgb(255, 78, 80);
+    background-image: url(../img/tv.png);
+}
+
+.person-list:nth-child(2)::after{
+    background-color: rgb(255, 165, 7);
+    background-image: url(../img/flask.png);
+}
+
+.person-list:nth-child(3)::after{
+    background-color: rgb(28, 215, 173);
+    background-image: url(../img/cup.png);
+}
+
+
+.person-list:nth-child(4)::after{
+    background-color: rgb(78, 115, 219);
+    background-image: url(../img/flight.png);
+}
+
+.interest{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.footer-button{
+    display: block;
+    height: 36px;
+    width: 276px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 78, 80);
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 78, 80);
+    line-height: 40px;
+    background-color: #fff;
+    outline: none;
+}
