@@ -1,0 +1,54 @@
+
+/*tablet
+-------------------------------------------------------------------------------*/
+
+@media (min-width: 768px){
+
+    .head-box{
+        background-image: url(../img/tablet/promo-back.jpg);
+        height: 700px;
+        padding-top: 44px;
+        margin-bottom: 70px;
+    }
+
+    .mine-title{
+        font-size: 52px;
+        margin-bottom: 26px;
+    }
+
+    .mine-subtitle{
+        font-size: 24px;
+        margin-bottom: 33px;
+    }
+
+    .find-button{
+        width: 226px;
+    }
+
+    .partner-title{
+        margin-bottom: 32px;
+    }
+
+    .footer-button{
+        width: 192px;
+    }
+
+    .persons-container{
+        margin-bottom: 38px;
+    }
+}
+
+
+/*Desktop
+----------------------------------------------------------------------------------*/
+@media (min-width: 992px){
+    .head-box{
+        background-image: url(../img/Desktop/promo-back.jpg);
+        height: 700px;
+    }
+
+    .persons-container {
+        max-width: 97%;
+        margin-bottom: 5px;
+    }
+}
