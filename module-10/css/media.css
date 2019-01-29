@@ -1,0 +1,12 @@
+
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 384dpi) {
+    .page-header--img{
+    background-image: url(../img/banner@2x-min.jpg);
+    background-size: 1902px auto;
+    height: 996px;
+    padding-top: 0;
+  }
+}
