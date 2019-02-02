@@ -24,7 +24,7 @@ p{
     padding: 0;
 }
 
-.page-header--img{
+.page-background{
     background:  -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../img/banner-min.jpg);
     background:  -webkit-linear-gradient(bottom, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(../img/banner-min.jpg);
     background:  -o-linear-gradient(bottom, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(../img/banner-min.jpg);
@@ -94,7 +94,7 @@ p{
 }
 
 
-.site-nav__item--text{
+.site-nav__item-text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -125,11 +125,11 @@ p{
     margin-top: 0;
 }
 
-.page-header__slogan-title--text{
+.page-header__title-text{
     font-size: 72px;
 }
 
-.page-header__slogan--text{
+.page-header__text{
     font-size: 150px;
     width: 7em;
     line-height: .94em;;
@@ -149,7 +149,7 @@ p{
     border: 3px solid #fff;
 }
 
-.page-header__link--text{
+.page-header__link-text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -195,14 +195,15 @@ p{
     margin: 0;
 }
 
-.service-box__item{
+
+.services__item{
     position: relative;
     width: 310px;
     margin-bottom: 96px;
     padding-left: 90px;
 }
 
-.service-box__item:nth-last-child(-n+3){
+.services__item:nth-last-child(-n+3){
     margin-bottom: 0px;
 }
 
@@ -226,7 +227,7 @@ p{
     line-height: 22px;
 }
 
-.service-box__item--ico::before{
+.services__icon::before{
     position: absolute;
     left: 32px;
     display: block;
@@ -235,29 +236,32 @@ p{
     width: 32px;
 }
 
-.service-box__item--ico:nth-child(1)::before{
+.services__icon--alarm::before{
     background-image: url(../img/ico/photography.png);
 }
 
-.service-box__item--ico:nth-child(2)::before{
+.services__icon--web_design::before{
     background-image: url(../img/ico/web_design.png);
 }
 
-.service-box__item--ico:nth-child(3)::before{
+.services__icon--creativity::before{
     background-image: url(../img/ico/creativity.png);
 }
 
-.service-box__item--ico:nth-child(4)::before{
+.services__icon--seo::before{
     background-image: url(../img/ico/seo.png);
 }
 
-.service-box__item--ico:nth-child(5)::before{
+.services__icon--css_html::before{
     background-image: url(../img/ico/css_html.png);
 }
 
-.service-box__item--ico:nth-child(6)::before{
+.services__icon--digital::before{
     background-image: url(../img/ico/digital.png);
 }
+
+
+
 
 .team-box{
     margin-bottom: 82px;
@@ -285,7 +289,7 @@ p{
     line-height: 25px;
 }
 
-.person-box__list{
+.person-box{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -296,7 +300,7 @@ p{
             justify-content: space-between;
 }
 
-.person-box__item--person-names{
+.person-box__person-names{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -317,7 +321,7 @@ p{
     margin-bottom: 24px;
 }
 
-.person-box__item:hover>.person-box__item--img{
+.person-box__item:hover>picture>.person-box__item--img{
     -webkit-transform:translate(-10px, -10px);
         -ms-transform:translate(-10px, -10px);
             transform:translate(-10px, -10px);
@@ -465,7 +469,6 @@ p{
     cursor: pointer;
     padding: 0;
 }
-
 
 
 
