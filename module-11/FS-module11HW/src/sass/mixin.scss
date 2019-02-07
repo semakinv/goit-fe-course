@@ -1,0 +1,10 @@
+@mixin ratios($var-width, $var-hight) {
+    width: $var-width;
+    height:$var-hight;
+}
+
+@mixin font-mix($var-fontfam, $var-fs, $var-fw) {
+    font-family: $var-fontfam;
+    font-size: $var-fs;
+    font-weight: $var-fw;
+}

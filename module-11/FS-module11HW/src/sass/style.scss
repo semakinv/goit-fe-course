@@ -1,0 +1,468 @@
+
+%clear-mp {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+p{
+    @extend %clear-mp;
+}
+
+.link-clear{
+    text-decoration: none;
+}
+
+.list-clear{
+    list-style: none;
+}
+
+.positon-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.wrapper{
+    width: 1202px;
+    @extend %clear-mp;
+}
+
+.page-background{
+    background:  -webkit-gradient(linear, left bottom, left top, from ($gradient_color1), to ($gradient_color2)), url(../img/banner-min.jpg);
+    background:  -webkit-linear-gradient(bottom, $gradient_color1, $gradient_color2), url(../images/banner-min.jpg);
+    background:  -o-linear-gradient(bottom, $gradient_color1, $gradient_color2), url(../images/banner-min.jpg);
+    background:  linear-gradient(to top, $gradient_color1, $gradient_color2), url(../images/banner-min.jpg);
+    background-position: top;
+    padding-top: 22px;
+    height: 978px;
+    margin-bottom: 44px;
+  }
+
+.page-header {
+    &__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 166px;
+    }
+
+    &__slogan-title {
+    color: $text_color;
+    margin-bottom: 36px;
+    margin-top: 0;
+    }
+
+    &__title-text {
+        @include font-mix($title_font, 72px, 400);
+    }
+
+    &__text {
+        @include font-mix($main_font, 150px, 700);
+        width: 7em;
+        line-height: .94em;
+        text-transform: uppercase;
+    }
+
+    &__slogan {
+    color: $text_color;
+    margin-bottom: 108px;
+    margin-top: 0;
+    }
+
+    &__link {
+    display: block;
+    color: $text_color;
+    @include ratios(154px, 34px);
+    border: 3px solid $text_color;
+    }
+
+    &__link-text {
+    @include font-mix($main_font, 14px, 700);
+    text-transform: uppercase;
+    line-height: 34px;
+    }
+
+}
+
+.site-logo{
+    display:block;
+    @include font-mix($main_font, 30px, 700);
+    color: $text_color;
+}
+
+.site-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 622px;
+
+
+    &__item-text{
+        @include font-mix($main_font, 14px, 400);
+        color: $text_color;
+        text-transform: uppercase;
+        height: 14px;
+    }
+
+    &__link{
+        display: block;
+        color: $text_color;
+    }
+
+    &__link--underline::after{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        content:"";
+        height: 3px;
+        background-color: $nav_color;
+        margin-top:10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+    }
+
+    &__item{
+        &:hover>.site-nav__link--underline{
+            color: $nav_color;
+            -webkit-transition: color 0.2s linear;
+            -o-transition: color 0.2s linear;
+            transition: color 0.2s linear;
+        }
+    }
+
+    &__item{
+        &:hover>.site-nav__link--underline::after{
+        opacity: 1;
+        }
+    }
+
+}
+
+.text-title{
+    @include font-mix($title_font, 24px, 400);
+}
+
+.text-subtitle{
+    @include font-mix($main_font, 30px, 700);
+    text-transform: uppercase;
+}
+
+
+.service-box{
+    margin-bottom: 88px;
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle{
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+
+    &__name{
+        @include font-mix($main_font, 14px, 400);
+        text-transform: uppercase;
+        color: $name_color;
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
+    &__des{
+        @include font-mix($second_font, 15px, 400);
+        color: $desc_color;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 22px;
+    }
+
+    &__list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.underline::after{
+    display: block;
+    content:"";
+    @include ratios(60px, 3px);
+    background-color: $accent_color;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.services__item{
+    position: relative;
+    width: 310px;
+    margin-bottom: 96px;
+    padding-left: 90px;
+
+    &:nth-last-child(-n+3){
+        margin-bottom: 0px;
+    }
+}
+
+.services{
+    &__icon{
+        &::before{
+            position: absolute;
+            left: 32px;
+            display: block;
+            content: '';
+            @include ratios(32px, 32px);
+        }
+
+        &--alarm::before{
+            background-image: url(../images/icons/photography.png);
+        }
+
+        &--web_design::before{
+            background-image: url(../images/icons/web_design.png);
+        }
+
+        &--creativity::before{
+            background-image: url(../images/icons/creativity.png);
+        }
+
+        &--seo::before{
+            background-image: url(../images/icons/seo.png);
+        }
+
+        &--css_html::before{
+            background-image: url(../images/icons/css_html.png);
+        }
+
+        &--digital::before{
+            background-image: url(../images/icons/digital.png);
+        }
+    }
+}
+
+
+.team-box{
+    margin-bottom: 82px;
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    &__des{
+        @include font-mix($second_font, 15px, 400);
+        margin-top: 0;
+        margin-bottom: 88px;;
+        padding: 0 7rem;
+        color: $desc_color;
+        line-height: 25px;
+    }
+}
+
+.person-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+
+&__person-names{
+    @include font-mix($main_font, 14px, 400);
+    text-transform: uppercase;
+    color: $name_color;
+    margin-bottom: 10px;
+}
+
+&__item{
+
+&--teams-names{
+    @include font-mix($second_font, 15px, 300);
+    font-style: italic;
+    color: $desc_color;
+}
+
+&--img{
+    margin-bottom: 24px;
+}
+
+&:hover>picture>.person-box__item--img{
+    -webkit-transform:translate(-10px, -10px);
+        -ms-transform:translate(-10px, -10px);
+            transform:translate(-10px, -10px);
+}
+
+    &:hover>.person-box__item-overlay{
+        opacity: 1;
+        z-index: 3;
+    }
+}
+
+    &__item-overlay{
+        position: absolute;
+        opacity: 0;
+        @include ratios(380px, 470px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: -webkit-gradient(linear, left bottom, left top, from($team_gradient_color1), color-stop($team_gradient_color2),to($team_gradient_color3));
+        background: -webkit-linear-gradient(bottom, $team_gradient_color1, $team_gradient_color2,$team_gradient_color3);
+        background: -o-linear-gradient(bottom, $team_gradient_color1, $team_gradient_color2,$team_gradient_color3);
+        background: linear-gradient(to top, $team_gradient_color1, $team_gradient_color2,$team_gradient_color3);
+        -webkit-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+        -webkit-box-shadow:10px 10px $back_color;
+                box-shadow:10px 10px $back_color;
+        -webkit-transform:translate(-10px, -10px);
+            -ms-transform:translate(-10px, -10px);
+                transform:translate(-10px, -10px);
+    }
+}
+
+.soc-ico{
+    @include ratios(227px, 56px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+
+    &__item{
+        @include ratios(56px,56px);
+        background-color: $nav_color;
+
+
+    &:hover{
+        background-color: $accent_color;
+            &>.soc-ico__link>.soc-ico__link--img{
+            fill:$text_color;
+            }
+    }
+}
+
+
+
+
+
+
+
+&__link{
+    @include ratios(56px,56px);
+    display: block;
+
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+
+    &--img{
+    fill: $accent_color;
+    z-index: 20;
+    @include ratios(56px,56px);
+}
+}
+}
+
+.footer{
+    border-top: 1px solid $footer_color;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px;
+
+
+&__rights{
+    @include font-mix($main_font, 14px, 400);
+    color: name_color;
+    margin-left: 0;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+
+
+&--link{
+    display: block;
+    color: $accent_color;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+}
+
+&__form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+
+&--mail{
+    @include font-mix($second_font, 15px, 300);
+    font-style: italic;
+    @include ratios(229px, 38px);
+    border-right:0px;
+    border-left: 1px solid $footer_color;
+    border-top: 1px solid $footer_color;
+    border-bottom: 1px solid $footer_color;
+    padding: 0;
+}
+
+&--button{
+    @include font-mix($main_font, 14px, 700);
+    text-transform: uppercase;
+    background-color: $back_color;
+    border: none;
+    color: $text_color;
+    @include ratios(150px, 40px);
+    cursor: pointer;
+    padding: 0;
+}
+}
+}
+
+
+
+

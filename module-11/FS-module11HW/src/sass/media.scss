@@ -1,0 +1,12 @@
+@media (-webkit-min-device-pixel-ratio: 2), 
+(-o-min-device-pixel-ratio: 2/1), 
+(min-resolution: 192dpi) {
+    .page-background{
+    background:  -webkit-gradient(linear, left bottom, left top, from($gradient_color1), to($gradient_color2)), url(../images/banner@2x2-min.jpg);
+    background:  -webkit-linear-gradient(bottom, $gradient_color1, $gradient_color2), url(../images/banner@2x2-min.jpg);
+    background:  -o-linear-gradient(bottom, $gradient_color1, $gradient_color2), url(../images/banner@2x2-min.jpg);
+    background:  linear-gradient(to top, $gradient_color1, $gradient_color2), url(../images/banner@2x2-min.jpg);
+    background-position: top;
+
+  }
+}
